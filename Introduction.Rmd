@@ -258,6 +258,7 @@ df <- tibble(
   version = pkgs$ondiskversion,
   source = gsub("@", "\\\\@", pkgs$source)
 )
+#readr::write_rds(df, "pkgs_to_install.rds")
 knitr::kable(df, format = "markdown")
 ```
 
